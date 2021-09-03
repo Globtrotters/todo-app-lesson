@@ -29,8 +29,7 @@ const index = require('./routes/index');
 app.use('/', index);
 
 // link to our ToDo routes with our main app.js
-const todoRoutes = require('./routes/todo.routes')
-app.use('/', todoRoutes)
+
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);
